@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Nameofapp</title>
-    <%= csrf_meta_tags %>
+    <title>Bro Reps</title>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Ribeye" rel="stylesheet">
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <%= image_tag("Logo.png") %>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <%= yield %>
     <footer>
-      &copy; 2017 Andrea Crawford
+      <hr>
+      <p>&copy; 2017 Andrea Crawford</p>
+      <p class="right">CrossFit® is the registered trademark of CrossFit, Inc. CrossFit Inc does not endorse or sanction any products.</p>
     </footer>
   </body>
 </html>
