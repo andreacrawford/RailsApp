@@ -2,8 +2,24 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1 {
+h1,
+h2 {
   font-family: Helvetica, Arial, Sans Serif;
-  color: teal;
+  color: #184161;
   text-align: center;
+}
+
+.image-row {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.contact-info {
+  text-align: center;
+  padding: 2em 0;
+}
+
+main {
+  padding: 2em;
 }
