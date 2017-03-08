@@ -69,7 +69,8 @@ footer p {
     color: #184161;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
   transform: scale(1.1);
   transition-delay: 100ms;
   -webkit-transition-delay: 100ms;
