@@ -25,14 +25,14 @@
             <span class="icon-bar"></span>
           </button>
 
-          <a class="navbar-brand" href="#">
-            <%= image_tag("Logo.png") %>
+          <a class="navbar-brand">
+            <%= link_to(image_tag("Logo.png", id: "logo"), static_pages_index_path) %>
           </a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li>About</li>
-            <li>Contact</li>
+            <li><%= link_to "About", static_pages_about_path %></li>
+            <li><%= link_to "Contact", static_pages_contact_path %></li>
           </ul>
         </div>
       </div>
