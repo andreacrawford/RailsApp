@@ -14,6 +14,20 @@
  *= require_self
  */
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  min-height: 100%;
+  position: relative;
+}
+
+.content {
+  padding-bottom: 100px;
+}
 /**** Navigation ***/
 
 .navbar {
@@ -39,6 +53,20 @@ li {
   text-transform: uppercase;
 }
 
+.nav>li>a {
+  padding: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #184161;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+  color: #184161;
+
+}
+
 /**** Footer ****/
 
 footer {
@@ -46,6 +74,11 @@ footer {
   padding: 15px;
   font-family: Helvetica, sans-serif;
   background-color: #D2D7D9;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  left: 0;
+  bottom: 0;
 }
 
 hr {
@@ -59,19 +92,5 @@ footer p {
 
 .right {
   float: right;
-}
-
-.nav>li>a {
-  padding: 0;
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: #184161;
-}
-
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
-  color: #184161;
-
 }
 
