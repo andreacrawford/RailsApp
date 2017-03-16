@@ -14,7 +14,7 @@
       <div class="item<%= " active" if product == @products.first %>">
         <%= image_tag(product.image_url, class: "img-responsive carousel-image") %>
         <div class="carousel-caption">
-            <%= product.name %>
+            <%= link_to product.name, products_path(@product) %>
         </div>
       </div> <!--end item--> 
     <% end %>
