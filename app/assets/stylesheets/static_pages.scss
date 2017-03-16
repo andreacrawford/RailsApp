@@ -32,29 +32,32 @@ main {
 .carousel-control .glyphicon-chevron-right,
 .carousel-control .icon-next,
 .carousel-control .glyphicon-chevron-left {
-    color: #D2D7D9;
+  color: #D2D7D9;
 }
 
 .carousel-caption {
-    color: #858F93;
-    text-shadow: none;
-    font-size: 2em;
+  position: relative;
+  color: #858F93;
+  text-shadow: none;
+  font-size: 2em;
+  right: auto;
+  left: auto;
 }
 
 .carousel-indicators li {
-    background-color: #858F93;
-    padding: 3px;
-    border: none;
+  background-color: #858F93;
+  padding: 3px;
+  border: none;
 }
 
 .carousel-indicators .active {
-    background-color: #D2D7D9;
+  background-color: #D2D7D9;
 }
 
 .carousel-image {
-    height: 550px;
-    max-height: 550px;
-    width: auto;
-    margin: auto;
+  height: 550px;
+  max-height: 550px;
+  width: auto;
+  margin: auto;
 }
 
