@@ -39,16 +39,21 @@ main {
     color: #858F93;
     text-shadow: none;
     font-size: 2em;
-    text-align: left;
 }
 
 .carousel-indicators li {
     background-color: #858F93;
-    padding: 0;
-    border-color: none;
-
+    padding: 3px;
+    border: none;
 }
 
 .carousel-indicators .active {
     background-color: #D2D7D9;
+}
+
+.carousel-image {
+    height: 500px;
+    max-height: 500px;
+    width: auto;
+    text-align: center;
 }
