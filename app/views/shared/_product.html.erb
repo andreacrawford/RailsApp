@@ -1,5 +1,5 @@
 <div class="col-xs-12 col-sm-6 col-md-3 product-overview">
-  <h2><%= product.name %></h2>
+  <h2><%= link_to product.name, product %></h2>
   <%= image_tag(product.image_url, class: "img-responsive") %> 
   <p><%= product.description %></p>
   <strong><p>$<%= product.price %></p></strong>
