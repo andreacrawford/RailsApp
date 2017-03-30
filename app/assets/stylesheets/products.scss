@@ -19,11 +19,23 @@ table {
 }
 
 .product-container {
-  max-width: 70%;
+  max-width: 60%;
   margin: 0 auto;
 }
 
 .product-container img {
   padding: 20px 0;
   max-width: 100%;
+}
+
+textarea.form-control {
+  height: 100px;
+}
+
+.all-products {
+  margin: 20px;
+} 
+
+.new-button {
+  margin-left: 10px;
 }

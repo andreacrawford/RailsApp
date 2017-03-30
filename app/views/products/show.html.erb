@@ -3,7 +3,7 @@
   <%= image_tag(@product.image_url) %>
   <p>$<%= @product.price %></p>
   <p><%= @product.description %></p>
-  <%= link_to 'Back', products_path %>
+  <%= link_to 'Back', products_path, class: "btn btn-primary btn-xs" %>
 </div>
 
 <!--
