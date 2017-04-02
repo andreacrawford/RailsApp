@@ -35,6 +35,13 @@
               <li><%= link_to "Products", products_path %></li>
               <li><%= link_to "About", static_pages_about_path %></li>
               <li><%= link_to "Contact", static_pages_contact_path %></li>
+              <li>
+                <%= form_tag("/products", method: "get", id: "search") do %>
+                  <%= label_tag(:q, "Search for:") %>
+                  <%= text_field_tag(:q) %>
+                  <%= submit_tag("Search", :class => "btn btn-primary btn-xs") %>
+                <% end %>
+              </li>
             </ul>
           </div>
         </div>

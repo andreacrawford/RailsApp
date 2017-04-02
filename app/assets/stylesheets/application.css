@@ -47,11 +47,12 @@ html, body {
 
 li {
   font-family: ribeye, Helvetica, sans-serif;
-  padding: 15px 20px;
+  padding: 20px 20px 15px 20px;
   color: #184161;
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
+  margin-top: 3px;
 }
 
 .nav>li>a {
@@ -66,6 +67,17 @@ li {
 .navbar-default .navbar-nav>li>a:focus {
   color: #184161;
 
+}
+
+#search {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-transform: none;
+  margin-top: -3px;
+}
+
+#search label {
+  font-weight: 400;
 }
 
 /**** Footer ****/
