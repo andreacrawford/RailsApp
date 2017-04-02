@@ -78,6 +78,11 @@ li {
 
 #search label {
   font-weight: 400;
+  color: #134263;
+}
+
+#search input {
+  border-radius: 5px;
 }
 
 /**** Footer ****/
