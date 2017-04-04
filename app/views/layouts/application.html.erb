@@ -36,11 +36,14 @@
               <li><%= link_to "About", static_pages_about_path %></li>
               <li><%= link_to "Contact", static_pages_contact_path %></li>
               <li>
-                <%= form_tag("/products", method: "get", id: "search") do %>
-                  <%= label_tag(:q, "Search for:") %>
-                  <%= text_field_tag(:q) %>
-                  <%= submit_tag("Search", :class => "btn btn-primary btn-xs") %>
-                <% end %>
+                <div class="form-group-sm">
+                    <%= form_tag("/products", method: "get", id: "search") do %>
+                      <%= text_field_tag(:q, nil,  class: "form-control search-box") %>
+                      <%= button_tag(type: "submit", class: "btn btn-primary search-button") do %>
+                          <span class="glyphicon glyphicon-search"></span>
+                      <% end %>
+                    <% end %>
+                </div>
               </li>
             </ul>
           </div>
@@ -59,3 +62,4 @@
     </div> <!--end page container -->
   </body>
 </html>
+
