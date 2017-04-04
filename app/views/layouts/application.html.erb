@@ -38,7 +38,7 @@
               <li>
                 <div class="form-group-sm">
                     <%= form_tag("/products", method: "get", id: "search") do %>
-                      <%= text_field_tag(:q, nil,  class: "form-control search-box") %>
+                      <%= text_field_tag(:q, nil,  class: "form-control search-box", placeholder: "Search...") %>
                       <%= button_tag(type: "submit", class: "btn btn-primary search-button") do %>
                           <span class="glyphicon glyphicon-search"></span>
                       <% end %>
