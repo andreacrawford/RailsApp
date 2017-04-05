@@ -2,26 +2,22 @@
 	<h1>Bro Reps CrossFit Gear</h1>
 </header>
 
-<div class="container">
+<div class="container contact-form">
   <%= flash[:notice] %>
 
   <%= form_tag("/static_pages/thank_you") do %>
-  <div class="row">
-    <div class="col-md-4">
       <div class="form-group">
         <%= label_tag :name %>
-        <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+        <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name", :required => true %>
       </div>      
       <div class="form-group">
         <%= label_tag :email, "Email Address" %>
-        <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+        <%= email_field_tag :email, nil, class: "form-control", placeholder: "Enter Email", :required => true %>
       </div>
       <div class="form-group">
         <%= label_tag :message %>
-        <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+        <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message", :required => true %>
       </div>      
-    </div><!-- end column --> 
-  </div><!-- end row -->
-  <%= submit_tag "Send" %>   
+  <%= submit_tag "Send", class: "btn btn-primary" %>   
   <% end %>
 </div><!-- end container -->

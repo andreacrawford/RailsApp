@@ -68,3 +68,19 @@ main {
 a:hover {
   text-decoration: none;
 }
+
+.contact-form {
+  max-width: 40%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.contact-form label {
+  color: #134263;
+}
+
+@media(max-width: 992px)  {
+  .contact-form {
+    max-width: 70%;
+  }
+}
