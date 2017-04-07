@@ -69,13 +69,13 @@ a:hover {
   text-decoration: none;
 }
 
-.contact-form {
-  max-width: 40%;
+.forms {
+  max-width: 400px;
   margin: 0 auto;
   padding-top: 40px;
 }
 
-.contact-form label {
+.forms label {
   color: #134263;
 }
 
@@ -83,4 +83,8 @@ a:hover {
   .contact-form {
     max-width: 70%;
   }
+}
+
+.send-button {
+  margin-bottom: 10px
 }
