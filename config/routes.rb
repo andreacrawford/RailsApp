@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
-  devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout'}
+    devise_scope :user do
+    get 'login', to: 'devise/sessions#new'
+    get 'register', to: 'devise/registrations#new', as: "new_user_registration"
+    delete 'logout', to: 'devise/sessions#destroy'
+  end
+
+  # Below for all other routes:
+  devise_for :users
+
+
   resources :users
   resources :products
   get 'static_pages/about'
