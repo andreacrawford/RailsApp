@@ -1,6 +1,6 @@
 class OrdersController < ApplicationController
+  before_action :authenticate_user!
   def index
-    before_filter :authenticate_user!
   end
 
   def show
