@@ -47,7 +47,7 @@ html, body {
 
 li {
   font-family: ribeye, Helvetica, sans-serif;
-  padding: 20px 20px 15px 20px;
+  padding: 20px 15px 15px 15px;
   color: #184161;
   font-size: 16px;
   font-weight: 600;
@@ -60,12 +60,32 @@ li {
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #184161;
+  color: #184161;
 }
 
 .navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav>li>a:focus,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover  {
   color: #184161;
+}
+
+.dropdown-menu {
+  background-color: #D2D7D9;
+  border: none;
+}
+
+.dropdown-menu>li>a {
+  color: #184161;
+}
+
+.dropdown-menu>li {
+  padding: 10px;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  color: #184161;
+  background-color: #D2D7D9;
 }
 
 #search {
