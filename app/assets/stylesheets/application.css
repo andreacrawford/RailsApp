@@ -49,7 +49,7 @@ li {
   font-family: ribeye, Helvetica, sans-serif;
   padding: 20px 15px 15px 15px;
   color: #184161;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   margin-top: 3px;
@@ -92,7 +92,7 @@ li {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   text-transform: none;
-  margin-top: -3px;
+  margin-top: -4px;
 }
 
 .search-box {
@@ -111,20 +111,6 @@ li {
 #search input {
   border-radius: 5px 0 0 5px;
 }
-/*
-@media (min-width: 768px) and (max-width: 875px)  {
-  #logo {
-    width: 220px;
-  }
-  .nav li {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .search-box {
-    width: 150px;
-  }
-}
-*/
 
 /* Code to change collapse breakpoint */
 @media (max-width: 991px) {

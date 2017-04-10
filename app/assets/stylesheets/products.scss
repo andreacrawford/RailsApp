@@ -49,15 +49,24 @@ textarea.form-control {
   display: inline-block;
 }
 
-.thumbnail {
-  border: none;
+.cart-button {
+  padding: 10px 30px;
+}
+
+button .glyphicon {
+  padding-right: 10px;
 }
 
 .price {
   font-weight: 700;
+  font-size: 20px
 }
 
 .product-specs {
-  padding: 20px;
+  padding: 20px 40px;
+}
+
+.product-container hr {
+  width: 100%;
 }
 
