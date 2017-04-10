@@ -41,7 +41,12 @@ textarea.form-control {
 }
 
 .review-button {
+  display: inline-block;
   float: right;
+}
+
+.reviews h4 {
+  display: inline-block;
 }
 
 .thumbnail {
@@ -55,3 +60,4 @@ textarea.form-control {
 .product-specs {
   padding: 20px;
 }
+
