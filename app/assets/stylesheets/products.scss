@@ -68,10 +68,19 @@ button .glyphicon {
 }
 
 .product-specs {
-  padding: 20px 40px;
+  padding: 0 40px;
 }
 
 .product-container hr {
   width: 100%;
+}
+
+@media (max-width: 991px) {
+  .product-specs {
+    padding: 0;
+  }
+  .cart-button {
+    margin-bottom: 20px;
+  }
 }
 
