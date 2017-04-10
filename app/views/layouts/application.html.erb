@@ -67,10 +67,13 @@
       </nav>
 
       <% if notice %>
-       <div class="alert alert-info"><%= notice %></div>
-      <% end %>
-      <% if alert %>
-       <div class="alert alert-warning"><%= alert %></div>
+        <div class="alert alert-info">
+          <%= notice %>
+        </div>
+      <% elsif alert %>
+        <div class="alert alert-warning">
+          <%= alert %>
+        </div>
       <% end %>
       
       <div class="content">
