@@ -5,9 +5,13 @@ class Product < ApplicationRecord
     Product.where("lower(name) LIKE lower(?)", "%#{search_term}%")
     #Product.where("name LIKE ?", "%#{search_term}%")
   end
-  
+
   def highest_rating_comment
     comments.rating_desc.first
+  end
+
+  def lowest_rating_comment
+    comments.rating_desc.last 
   end
 end
 
