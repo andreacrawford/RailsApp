@@ -1,18 +1,31 @@
-<div class="product-container">
-  <h1><%= @product.name %></h1>
-  <% unless @product.image_url.blank? %>
-    <%= image_tag(@product.image_url) %>
-  <% end %>
-  <p>$<%= @product.price %></p>
-  <p><%= @product.description %></p>
-  <%= link_to 'Back', products_path, class: "btn btn-primary btn-xs" %>
-  <%= link_to 'Edit', edit_product_path(@product), class: 'btn btn-primary btn-xs' %>
-  <%= link_to 'Destroy', @product, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-primary btn-xs' %>
-</div>
+<div class="container-fluid product-container">
+  <div class="row">
+    <h3><%= @product.name %></h3>
+    <div class="col-xs-12 col-md-8 thumbnail">
+      <% unless @product.image_url.blank? %>
+        <%= image_tag(@product.image_url) %>
+      <% end %>
+    </div>
+    <div class="col-xs-12 col-md-4 product-specs">
+      <p class="price">$<%= @product.price %></p>
+      <p><button class="btn btn-primary">Add to Cart</button>
+    </div>
+    <div class="col-xs-12">
+      <p><%= @product.description %></p>
+    </div>
+    <div class="col-xs-12 reviews">
+      <hr>
+      <h4>Reviews</h4>
+      <button class="btn btn-primary review-button">Write a Review</button>
+      <p>Reviews go here</p>
+      <%= link_to 'Back', products_path, class: "btn btn-primary btn-xs" %>
+      <%= link_to 'Edit', edit_product_path(@product), class: 'btn btn-primary btn-xs' %>
+      <%= link_to 'Destroy', @product, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-primary btn-xs' %>
+    </div>
+  </div> <!-- end row -->
+</div> <!-- end container -->
 
-<!--
-<p id="notice"><%= notice %></p>
-
+<!---
 <p>
   <strong>Name:</strong>
   <%= @product.name %>
