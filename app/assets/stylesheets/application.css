@@ -93,6 +93,7 @@ li {
 .navbar-default .navbar-nav>.open>a:hover {
   color: #184161;
   background-color: #D2D7D9;
+  font-weight: 600;
 }
 
 #search {
