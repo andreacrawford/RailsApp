@@ -10,7 +10,10 @@ Rails.application.routes.draw do
 
 
   resources :users
-  resources :products
+  resources :products do
+    resources :comments
+  end
+  
   get 'static_pages/about'
 
   get 'static_pages/contact'
