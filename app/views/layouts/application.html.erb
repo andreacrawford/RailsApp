@@ -36,7 +36,7 @@
               <li><%= link_to "About", static_pages_about_path %></li>
               <li><%= link_to "Contact", static_pages_contact_path %></li>
               <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown">Profile
+                <a class="dropdown-toggle" data-toggle="dropdown">Account
                 <span class="caret"></span></a>    
                 <ul class="dropdown-menu">
                   <li>            
@@ -67,10 +67,13 @@
       </nav>
 
       <% if notice %>
-       <div class="alert alert-info"><%= notice %></div>
-      <% end %>
-      <% if alert %>
-       <div class="alert alert-warning"><%= alert %></div>
+        <div class="alert alert-info">
+          <%= notice %>
+        </div>
+      <% elsif alert %>
+        <div class="alert alert-warning">
+          <%= alert %>
+        </div>
       <% end %>
       
       <div class="content">

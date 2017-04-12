@@ -49,7 +49,7 @@ li {
   font-family: ribeye, Helvetica, sans-serif;
   padding: 20px 15px 15px 15px;
   color: #184161;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   margin-top: 3px;
@@ -83,16 +83,24 @@ li {
   padding: 10px;
 }
 
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+.dropdown>a {
+  cursor: pointer;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
   color: #184161;
   background-color: #D2D7D9;
+  font-weight: 600;
 }
 
 #search {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   text-transform: none;
-  margin-top: -3px;
+  margin-top: -4px;
 }
 
 .search-box {
@@ -111,20 +119,6 @@ li {
 #search input {
   border-radius: 5px 0 0 5px;
 }
-/*
-@media (min-width: 768px) and (max-width: 875px)  {
-  #logo {
-    width: 220px;
-  }
-  .nav li {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .search-box {
-    width: 150px;
-  }
-}
-*/
 
 /* Code to change collapse breakpoint */
 @media (max-width: 991px) {
@@ -134,17 +128,14 @@ li {
   .navbar-left,.navbar-right {
       float: none !important;
   }
+
+  .navbar-right .dropdown-menu {
+    right: initial;
+  }
   .navbar-toggle {
       display: block;
   }
-  .navbar-collapse {
-      border-top: 1px solid transparent;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-  }
-  .navbar-fixed-top {
-      top: 0;
-      border-width: 0 0 1px;
-  }
+
   .navbar-collapse.collapse {
       display: none!important;
   }
