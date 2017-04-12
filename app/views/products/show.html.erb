@@ -18,6 +18,7 @@
       <hr>
       <%= render partial: "shared/new_comment" %>
       <%= render partial: "shared/comments" %>
+      <%= will_paginate @comments %>
       <div class="admin-navigation">
         <%= link_to 'Back', products_path, class: "btn btn-primary btn-xs" %>
         <%= link_to 'Edit', edit_product_path(@product), class: 'btn btn-primary btn-xs' %>
