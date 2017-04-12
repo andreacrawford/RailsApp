@@ -90,7 +90,7 @@ button .glyphicon {
 }
 
 .rated img {
-  padding: 0;
+  padding: 0 0 10px 0;
 }
 
  @media (max-width: 768px) {
@@ -141,6 +141,6 @@ button .glyphicon {
   color: #134263;
 }
 
-.pagination a:hover, .apple_pagination a:focus {
+.pagination a:hover, .pagination a:focus {
   text-decoration: underline;
 }
