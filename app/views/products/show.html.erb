@@ -8,6 +8,7 @@
     </div>
     <div class="col-xs-12 col-md-5 product-specs">
       <p class="price">$<%= @product.price %></p>
+      <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
       <p><button class="btn btn-primary cart-button"><span class="glyphicon glyphicon-shopping-cart"></span>Add to Cart</button>
     </div>
     <div class="col-xs-12 product-description">
@@ -17,9 +18,11 @@
       <hr>
       <%= render partial: "shared/new_comment" %>
       <%= render partial: "shared/comments" %>
-      <%= link_to 'Back', products_path, class: "btn btn-primary btn-xs" %>
-      <%= link_to 'Edit', edit_product_path(@product), class: 'btn btn-primary btn-xs' %>
-      <%= link_to 'Destroy', @product, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-primary btn-xs' %>
+      <div class="admin-navigation">
+        <%= link_to 'Back', products_path, class: "btn btn-primary btn-xs" %>
+        <%= link_to 'Edit', edit_product_path(@product), class: 'btn btn-primary btn-xs' %>
+        <%= link_to 'Destroy', @product, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-primary btn-xs' %>
+      </div> <!-- end admin navigation -->
     </div>
   </div> <!-- end row -->
 </div> <!-- end container -->

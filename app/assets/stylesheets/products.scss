@@ -51,6 +51,7 @@ textarea.form-control {
 
 .cart-button {
   padding: 10px 30px;
+  margin-top: 20px;
 }
 
 button .glyphicon {
@@ -84,3 +85,25 @@ button .glyphicon {
   }
 }
 
+.posted-reviews {
+  margin-left: 0;
+}
+
+.rated img {
+  padding: 0;
+}
+
+ @media (max-width: 768px) {
+ .product-container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.admin-navigation {
+  margin-top: 20px;
+}
+
+.time-ago {
+  margin-left: 5px;
+}
