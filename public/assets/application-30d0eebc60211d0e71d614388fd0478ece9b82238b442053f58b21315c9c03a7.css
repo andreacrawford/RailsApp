@@ -1,0 +1,505 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 5, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+table {
+  width: 80%;
+  margin: 20px;
+}
+
+/* line 10, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.new-product {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+/* line 15, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.product-overview {
+  margin: 40px 0;
+  float: left;
+  height: 430px;
+}
+
+/* line 21, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.product-container {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+/* line 26, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.product-container img {
+  padding: 20px 0;
+  max-width: 100%;
+}
+
+/* line 31, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+textarea.form-control {
+  height: 100px;
+}
+
+/* line 35, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.all-products {
+  margin: 20px;
+}
+
+/* line 39, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.review-button {
+  display: inline-block;
+  float: right;
+}
+
+/* line 44, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.reviews h4 {
+  display: inline-block;
+}
+
+/* line 48, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.cart-button {
+  padding: 10px 30px;
+  margin-top: 20px;
+}
+
+/* line 53, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+button .glyphicon {
+  padding-right: 10px;
+}
+
+/* line 57, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.product-description,
+.reviews {
+  padding-left: 0;
+}
+
+/* line 62, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.price {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* line 67, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.product-specs {
+  padding: 0 40px;
+}
+
+/* line 71, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.product-container hr {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  /* line 76, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+  .product-specs {
+    padding: 0;
+  }
+
+  /* line 79, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+  .cart-button {
+    margin-bottom: 20px;
+  }
+}
+/* line 84, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.posted-reviews {
+  margin-left: 0;
+}
+
+/* line 88, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.rated img {
+  padding: 0 0 10px 0;
+}
+
+@media (max-width: 768px) {
+  /* line 93, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+  .product-container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+/* line 99, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.admin-navigation {
+  margin-top: 20px;
+}
+
+/* line 103, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.time-ago {
+  margin-left: 5px;
+}
+
+/* line 109, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.pagination {
+  text-align: center;
+  cursor: default;
+}
+
+/* line 113, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.pagination a, .pagination span {
+  padding: 0.2em 0.3em;
+}
+
+/* line 117, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.pagination .disabled {
+  color: #858F93;
+}
+
+/* line 121, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  background-color: #D2D7D9;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.5;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px;
+  color: #134263;
+}
+
+/* line 135, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.pagination a {
+  text-decoration: none;
+  color: #134263;
+}
+
+/* line 140, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.pagination a:hover, .pagination a:focus {
+  text-decoration: underline;
+}
+
+/* line 144, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/products.scss */
+.new-product-button {
+  float: right;
+  padding: 20px 15px;
+}
+/* line 5, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/static_pages.scss */
+h1,
+h2 {
+  font-family: Helvetica, Arial, Sans Serif;
+  color: #134263;
+  text-align: center;
+}
+
+/* line 12, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/static_pages.scss */
+h3 {
+  color: #134263;
+}
+
+/* line 16, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/static_pages.scss */
+.image-row {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+/* line 22, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/static_pages.scss */
+.contact-info {
+  text-align: center;
+  padding: 2em 0;
+}
+
+/* line 27, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/static_pages.scss */
+main {
+  padding: 2em;
+}
+
+/* line 31, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/static_pages.scss */
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+/* line 36, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/static_pages.scss */
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left {
+  color: #D2D7D9;
+}
+
+/* line 42, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/static_pages.scss */
+.carousel-caption {
+  position: relative;
+  color: #858F93;
+  text-shadow: none;
+  font-size: 2em;
+  right: auto;
+  left: auto;
+}
+
+/* line 51, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators li {
+  background-color: #858F93;
+  padding: 3px;
+  border: none;
+}
+
+/* line 57, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators .active {
+  background-color: #D2D7D9;
+}
+
+/* line 61, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/static_pages.scss */
+.carousel-image {
+  height: 550px;
+  max-height: 550px;
+  width: auto;
+  margin: auto;
+}
+
+/* line 68, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/static_pages.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 72, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/static_pages.scss */
+.forms {
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+/* line 78, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/static_pages.scss */
+.forms label {
+  color: #134263;
+}
+
+@media (max-width: 992px) {
+  /* line 83, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/static_pages.scss */
+  .contact-form {
+    max-width: 70%;
+  }
+}
+/* line 88, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/static_pages.scss */
+.send-button {
+  margin-bottom: 10px;
+}
+
+/* line 92, /Users/andrea/Documents/Code/School/Ruby/RailsApp/app/assets/stylesheets/static_pages.scss */
+.alert {
+  text-align: center;
+  margin-top: -20px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  min-height: 100%;
+  position: relative;
+}
+
+.content {
+  padding-bottom: 135px;
+  padding-top: 10px;
+}
+/**** Navigation ***/
+
+.navbar {
+  background-color: #D2D7D9;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+#logo {
+  height: 60px;
+  padding: 15px;
+  width: auto;
+}
+
+li {
+  font-family: ribeye, Helvetica, sans-serif;
+  padding: 20px 15px 15px 15px;
+  color: #184161;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+
+.nav>li>a {
+  padding: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #184161;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover  {
+  color: #184161;
+}
+
+.dropdown-menu {
+  background-color: #D2D7D9;
+  border: none;
+}
+
+.dropdown-menu>li>a {
+  color: #184161;
+}
+
+.dropdown-menu>li {
+  padding: 10px;
+}
+
+.dropdown>a {
+  cursor: pointer;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+  color: #184161;
+  background-color: #D2D7D9;
+  font-weight: 600;
+}
+
+#search {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-transform: none;
+  margin-top: -4px;
+}
+
+.search-box {
+  width: auto;
+  display: inline-block;
+  float: left;
+}
+
+.search-button {
+  display: inline-block;
+  float: left;
+  height: 30px;
+  border-radius: 0 5px 5px 0;
+}
+
+#search input {
+  border-radius: 5px 0 0 5px;
+}
+
+/* Code to change collapse breakpoint */
+@media (max-width: 991px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+
+  .navbar-right .dropdown-menu {
+    right: initial;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin: 7.5px -15px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
+
+/**** Footer ****/
+
+footer {
+  color: #858F93;
+  padding: 15px;
+  font-family: Helvetica, sans-serif;
+  background-color: #D2D7D9;
+  position: absolute;
+  width: 100%;
+  height: 115px;
+  left: 0;
+  bottom: 0;
+}
+
+hr {
+  border-color: #858F93;
+  width: 90%;
+}
+
+footer p {
+  display: inline-block;
+}
+
+.right {
+  float: right;
+}
+
