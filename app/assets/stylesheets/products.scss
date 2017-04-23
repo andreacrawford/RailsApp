@@ -36,10 +36,6 @@ textarea.form-control {
   margin: 20px;
 } 
 
-.new-button {
-  margin-left: 10px;
-}
-
 .review-button {
   display: inline-block;
   float: right;
@@ -143,4 +139,9 @@ button .glyphicon {
 
 .pagination a:hover, .pagination a:focus {
   text-decoration: underline;
+}
+
+.new-product-button {
+  float: right;
+  padding: 20px 15px;
 }
