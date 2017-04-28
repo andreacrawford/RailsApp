@@ -1,9 +1,10 @@
 <script
   src="https://checkout.stripe.com/checkout.js" class="stripe-button"
   data-key="pk_test_Z2kZ4AjIjvvMl0h3M6XzbGd4"
-  data-amount=<%= @product.price*100 %>
+  data-amount="<%= @product.price*100 %>"
   data-name="Bro Reps"
-  data-description=<%= @product.name %>
-  data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+  data-description="<%= @product.name %>"
+  data-image="<%= @product.image_url %>"
   data-locale="auto">
 </script>
+
