@@ -7,4 +7,4 @@
   data-image="<%= @product.image_url %>"
   data-locale="auto">
 </script>
-
+<%= hidden_field_tag(:product_id, @product.id) %>
