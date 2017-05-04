@@ -8,4 +8,5 @@ $( document ).on('turbolinks:load', function() {
       return $(this).attr("data-score");
     }
   });
+  $(".img-zoom").elevateZoom();
 });
