@@ -20,7 +20,9 @@
     </div>
     <div class="col-xs-12 product-description">
       <p><%= @product.description %></p>
+      <p>Views: <%= @product.views %></p>
     </div>
+
     <div class="col-xs-12 reviews">
       <%= render partial: "shared/new_comment" %>
       <%= render partial: "shared/comments" %>
