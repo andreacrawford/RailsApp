@@ -59,6 +59,12 @@ button .glyphicon {
   padding-left: 0;
 }
 
+@media (max-width: 991px) {
+  .product-description {
+    padding-top: 20px;
+  }
+}
+
 .price {
   font-weight: 700;
   font-size: 20px
