@@ -9,5 +9,9 @@ sequence(:email) { |n| "user#{n}@generateduser.com" }
     last_name "User"
     admin false
 
+    factory :admin do
+      admin true
+    end
+
   end
 end
