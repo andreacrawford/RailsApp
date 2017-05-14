@@ -15,6 +15,7 @@ class PaymentsController < ApplicationController
 
       if charge.paid
         Order.create( product_id: @product_id, user_id: @user_id, total: @product_price.to_i )
+        UserMailer.payment_confirmation(@user, @product).deliver_now
       end
 
       rescue Stripe::CardError => e
@@ -26,3 +27,6 @@ class PaymentsController < ApplicationController
     redirect_to product_path(@product), notice: "Payment was processed successfully"
   end
 end
+
+
+ 
